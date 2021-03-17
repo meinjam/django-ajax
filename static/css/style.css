@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(238, 205, 163) 25%,
+    rgba(239, 98, 159, 0.8) 50%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  animation: bg-animation 50s infinite;
+  background-size: 500%;
+  min-height: 100vh;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+svg {
+  cursor: pointer;
+}
+
+.todo .card .item .left p.lin-through {
+  text-decoration: line-through;
+}
+
+.todo .contents {
+  border-radius: 5px;
+  border: 2px solid #555;
+  padding: 1.5rem;
+}
+
+.todo .card .item .left input {
+  height: 27px !important;
+  width: 300px !important;
+}
